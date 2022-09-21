@@ -20,4 +20,33 @@ def sum3(nums):
 def rotate_left3(nums):
   return [nums[1], nums[2], nums[0]]
 
+def reverse3(nums):
+  return [nums[2],nums[1],nums[0]]
 
+def max_end3(nums):
+  a = nums[0]
+  if nums[0] < nums[2]:
+    a = nums[2]
+  return [a,a,a]
+
+def sum2(nums):
+  index = 0
+  sum = 0
+  for e in nums:
+    if index < 2:
+      sum = sum + e
+    index = index + 1
+  return sum
+
+def middle_way(a, b):
+  return [a[1],b[1]]
+
+def make_ends(nums):
+  return [nums[0],nums[len(nums) -1]]
+
+def has23(nums):
+  for e in nums:
+    if e == 2 or e == 3:
+      return True
+  return False
+  
