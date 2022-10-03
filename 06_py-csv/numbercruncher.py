@@ -22,14 +22,15 @@ HOW THIS SCRIPT WORKS:
 
 import csv
 import random as rng
+# imported csv to read file, rng in the later function
 
 def filereader():
     file1 = open("occupations.csv",'r')
     file1.readline()
-    sha= file1.readlines()
+    sha= file1.readlines() #skip first line bc it just has the headings, which aren't necessary
     sha = sha[:-1]
-    dictionary = {}
-    for e in sha:
+    dictionary = {} #make dictionary
+    for e in sha: #two cases, if a string has " " remove it after the quotes are finished, if a string is ' ' remove it after the , is done
         if e[0] == '"':
             dictionary[e[1:e.find('",')]] = float(e[e.find('",')+2:len(e)-1])
         else:
@@ -37,12 +38,12 @@ def filereader():
     return dictionary
 
 def occupation(dic):
-    occlist = []
-    for key in dic:
-        number = int((dic[key])*10)
+    occlist = [] #make a list that should be filled with 998 values depending on the percentage chance of the occupation
+    for key in dic: # go through each occupation
+        number = int((dic[key])*10) #multiply by 10 to get a int value
         for x in range(number):
-            occlist.append(key)
-    index = rng.randint(0, len(occlist)-1)
-    return "Your randomly selected occupation is " + occlist[index] + " with a " + str(dic[occlist[index]]) + "% chance."
+            occlist.append(key) #add the value to the occlist
+    index = rng.randint(0, len(occlist)-1) #generate a random value that would be an index in the occlist
+    return "Your randomly selected occupation is " + occlist[index] + " with a " + str(dic[occlist[index]]) + "% chance." #return occupation and chance
         
 print(occupation(filereader()))
