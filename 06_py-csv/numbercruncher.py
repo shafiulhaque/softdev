@@ -1,25 +1,27 @@
 '''
-Charles's Angels::Aleksandra Shifrina, Nakib Abedin, Ameer Alnasser
+Awesome Sharks :: Shafiul Haque, Ameer Alnasser
 SoftDev pd08
-K04 -- RNG + Dictionaries
-2022-09-22
+K06 -- Divine your Destiny
+2022-10-02
 time spent: 0.5hrs
 DISCO:
-    *figured out that .keys() returns all keys of a dictionary  
-    *figured out typecasting. ex: int(4.0)
-    *figured out general solution for returning a random devo 
+    *figured out how to go through each element in a dictionary 
+    *figured out typecasting between string and integer values
+    *figured out general solution for returning a random occupation
 QCC:
-    *will the final dictionary work with our code?
-    *how do we ensure that the code will completely randomly chose a devo?
-OPS Summary:
-    1. gather all keys from dictionary in a list, keys
-    2. pick a random index using length of list
-    3. retrieve key from list
-    4. generate a random element from list associated with key
-    5. return random devo
+    *what happens if a key in a dictionary wants to hold two different values?
+    *is there a built in function to weigh different values randomly?
+HOW THIS SCRIPT WORKS:
+    1. open the csv file and read it in as a txt
+    2. read the occupations and values into a dictionary
+    3. go through each occupation and mulitiply the percentage value by 10
+    4. put the occupation in a list as many times as the percentage value multiplied by 10
+    5. choose a random value between the range of the list
+    6. use the value to return occupation and percentage
 '''
 
 import csv
+import random as rng
 
 def filereader():
     file1 = open("occupations.csv",'r')
@@ -28,8 +30,19 @@ def filereader():
     sha = sha[:-1]
     dictionary = {}
     for e in sha:
-        if e[1] == '"'
-        dictionary.append(e[:e.find(
-    return sha
+        if e[0] == '"':
+            dictionary[e[1:e.find('",')]] = float(e[e.find('",')+2:len(e)-1])
+        else:
+            dictionary[e[0:e.find(',')]] = float(e[e.find(',')+1:len(e)-1])
+    return dictionary
 
-print(filereader())
+def occupation(dic):
+    occlist = []
+    for key in dic:
+        number = int((dic[key])*10)
+        for x in range(number):
+            occlist.append(key)
+    index = rng.randint(0, len(occlist)-1)
+    return "Your randomly selected occupation is " + occlist[index] + " with a " + str(dic[occlist[index]]) + "% chance."
+        
+print(occupation(filereader()))
