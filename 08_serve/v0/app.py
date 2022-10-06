@@ -7,11 +7,11 @@ time spent: 0.5hrs
 '''
 
 from flask import Flask
-app = Flask(__name__) # ...
+app = Flask(__name__) # constructor, creates the flask
 
-@app.route("/") # ...
+@app.route("/") # routes the app to the link
 def hello_world():
-    print(__name__) # ...
-    return "No hablo queso!"  # ...
+    print(__name__) # doesn't return anything
+    return "No hablo queso!"  # statement prints out when you click the link
 
-app.run()  # ...
+app.run()  # runs the app
