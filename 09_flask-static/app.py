@@ -1,6 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+Team Brown: Nakib Abedin, Eric Sohel, Shafiul Haque
+SoftDev pd08
+K09: Some Things Never Change
+2022-10-12
+time spent: 0.2hrs
+'''
 
 # DEMO 
 # basics of /static folder
