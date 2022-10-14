@@ -13,6 +13,12 @@ from flask import request           #facilitate form submission
 
 app = Flask(__name__)    #create Flask object
 
+mydict = {
+
+    "esohel30": "soheleric"
+
+
+}
 
 '''
 trioTASK:
@@ -59,7 +65,10 @@ def authenticate():
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return request.args['username'] #response to a form submission
+    if (mydict[request.args['username']]==request.args['password']):
+        return "RIGHT PASSWORD " + request.args['username'] #response to a form submission
+    else:
+        return "WRONG PASSWORD"
 
 
 
