@@ -1,8 +1,8 @@
-# Team Brown: Nakib Abedin, Eric Sohel, Shafiul Haque
+# Team Mykolyk Fan Club: Shafiul Haque, David Deng, April Li
 # SoftDev pd08
-# K11: Form(s) Like Voltron
-# 2022-10-13
-# time spent: 0.2hrs
+# K12: Take and Give
+# 2022-10-17
+# time spent: 0.3hrs
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
