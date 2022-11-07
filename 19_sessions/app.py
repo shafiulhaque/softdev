@@ -18,7 +18,7 @@ mydict = {}
 
 app.secret_key = 'hi'
 username = 'bruh'
-password = 'bruh'
+password = 'bruh2'
 
 def filereader():
     file1 = open("devofam.csv",'r')
@@ -42,8 +42,7 @@ def disp_loginpage():
         print(request.form['username'])
         print(request.form['password'])
         if request.form['password'] == password:
-            print(session['username'])
-            print(session['password'])
+            print(session)
             session['username'] = request.form['username']
             return render_template('response.html', username = session['username'])
         return render_template('login.html', error="incorrect password") #in case the password is incorrect
