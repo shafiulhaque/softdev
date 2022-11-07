@@ -33,17 +33,21 @@ filereader()
 @app.route('/')
 def show():
     if 'username' in session: #if user is already in session, will go to response page logged in
-        return render_template('response.html', username = session['username']) 
+        return render_template('response.html', username = session['username'])
     return render_template('login.html') #if user isn't already logged in go to login page
 
 @app.route("/login", methods=['GET', 'POST'])
 def disp_loginpage():
     if request.method == 'POST' and request.form['username'] == username:
+        print(request.form['username'])
+        print(request.form['password'])
         if request.form['password'] == password:
+            print(session['username'])
+            print(session['password'])
             session['username'] = request.form['username']
-            return render_template('response.html', username = session['username']) 
-        return render_template('login.html', error="incorrect password")
-    return render_template('login.html', error ="incorrect username")
+            return render_template('response.html', username = session['username'])
+        return render_template('login.html', error="incorrect password") #in case the password is incorrect
+    return render_template('login.html', error ="incorrect username") #in case the username is incorrect
 
 
 @app.route("/logout", methods=['GET', 'POST'])
@@ -54,5 +58,5 @@ def disp_logoutpage():
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
