@@ -3,7 +3,7 @@ Team NPC: Shafiul Haque, David Deng
 SoftDev pd08
 K23: A Day of Noodling
 2022-11-28
-time spent: 0.3hrs
+time spent: 1.2hrs
 -->
 
 <!doctype html>
@@ -26,84 +26,176 @@ time spent: 0.3hrs
       <h6>Devo2: David Deng</h6>
     </div>
   </div>
+  <br>
 
-  <div class="row">
-    <h2>FEATURE: Form</h2>
-    With Foundation, forms are really easy to make! There's many different formats and options that you can have in a form:
-  </div>
+  <div class="grid-x grid-padding-x">
+    <div class="large-8 medium-8 cell">
 
-  <div class="row">
-    <div class="columns">
-      <form>
-        <br>
-        FILL IN THE BLANK OPTION
-        <label><b>Put in thy name.</b>
-          <input type="text">
-        </label>
-        <br>
+      <div class="row">
+        <h2>FEATURE: Form</h2>
+        With Foundation, forms are really easy to make! There's many different formats and options that you can have in a form:
+      </div>
 
-        CHOOSE THE OPTION
-        <label><b>How tired are you today?</b>
-          <select>
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5</option>
-          </select>
-        </label>
-        <br>
+      <div class="row">
+        <div class="columns">
+          <form>
+            <br>
+            FILL IN THE BLANK OPTION
+            <label><b>Put in thy name.</b>
+              <input type="text">
+            </label>
+            <br>
 
-        LONG ANSWER RESPONSE
-        <label>
-          <b>Is Mr. Mykolyk the greatest teacher ever? Write at least two sentences on your opinion. (25 points)</b>
-          <textarea></textarea>
-        </label>
+            CHOOSE THE OPTION
+            <label><b>How tired are you today?</b>
+              <select>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+              </select>
+            </label>
+            <br>
 
-        MULTIPLE CHOICE!!
-        <div class="row">
-          <fieldset class="large-6 columns">
-            <legend><b>How many holes are in a polo?</b></legend>
-            <input type="radio" name="polo" value="1" id="choice1" required><label>1</label>
-            <input type="radio" name="polo" value="2" id="choice2"><label>2</label>
-            <input type="radio" name="polo" value="4" id="choice3"><label>4</label>
-          </fieldset>
+            LONG ANSWER RESPONSE
+            <label>
+              <b>Is Mr. Mykolyk the greatest teacher ever? Write at least two sentences on your opinion. (25 points)</b>
+              <textarea></textarea>
+            </label>
 
-          <fieldset class="large-6 columns">
-            <legend>What world cups have you watched?</legend>
-            <input id="1" type="checkbox"><label for="checkbox1">2014</label>
-            <input id="2" type="checkbox"><label for="checkbox2">2018</label>
-            <input id="3" type="checkbox"><label for="checkbox3">2022 (now)</label>
-          </fieldset>
+            MULTIPLE CHOICE!!
+            <div class="row">
+              <fieldset class="large-6 columns">
+                <legend><b>How many holes are in a polo?</b></legend>
+                <input type="radio" name="polo" value="1" id="choice1" required><label>1</label>
+                <input type="radio" name="polo" value="2" id="choice2"><label>2</label>
+                <input type="radio" name="polo" value="4" id="choice3"><label>4</label>
+              </fieldset>
+
+              <fieldset class="large-6 columns">
+                <legend>What world cups have you watched?</legend>
+                <input id="1" type="checkbox"><label for="checkbox1">2014</label>
+                <input id="2" type="checkbox"><label for="checkbox2">2018</label>
+                <input id="3" type="checkbox"><label for="checkbox3">2022 (now)</label>
+              </fieldset>
+            </div>
+
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Submit">
+            </div>
+
+          </form>
         </div>
+      </div><br>
 
-        <div class="input-group-button">
-          <input type="submit" class="button" value="Submit">
+      <div class="row">
+        <h2>FEATURE: Grid Cells</h2>
+        In Foundation, grids are a great way to split up your work!
+        <br>In order to create a comprehensive grid, you must have a divider for the <b>grid-x grid-padding-x</b>, the <b>type of grid cell</b>, and a <b>primary callout</b>.
+      </div>
+      <br>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="primary callout">
+            <p>This is a twelve cell section in a grid-x.
+            In this case, the class for the divider would be a large-12 cell.</p>
+          </div>
         </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-6 medium-6 cell">
+          <div class="primary callout">
+            <p>Six cell: the class here is large-6 medium-6 cell.</p>
+          </div>
+        </div>
+        <div class="large-6 medium-6 cell">
+          <div class="primary callout">
+            <p>Another six cell :)</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>Four cell: the class here is large-4 medium-4 small-4 cell.</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>A four cell :0</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>Another four cell :-)</p>
+          </div>
+        </div>
+      </div>
 
-      </form>
+  With grids, you're also able to choose how wide you want to make your text!<br><br>
+  <h5>Full Size Width: use the default <b>class="cell"</b></h5>
+    <div class="grid-x grid-padding-x">
+      <div class="cell">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</div>
     </div>
-  </div>
+    <br>
+    <h5>1/2 Size Width: use the <b>class="cell small-6"</b></h5>
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-6">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</div>
+    </div>
+    <br>
 
-  <div class="row">
-    <h2>FEATURE: Grid Cells</h2>
-    Cards are a popular and flexible UI component in Foundation!
-  </div>
-
-  <div class="row">
-    <h2>FEATURE: Navigation Bars</h2>
-    Cards are a popular and flexible UI component in Foundation!
-  </div>
+  In grids, you're also able to scroll through information:
+  <div class="grid-y medium-grid-frame">
+    <h5>Horizontal Scroll</h5>
+      <div class="cell shrink header medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-5 medium-cell-block">
+            <p style="width:50vw;">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    <h5>Vertical Scroll</h5>
+      <div class="cell medium-auto medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-8 medium-cell-block-y">
+            <p style="height:50vw;">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
 
   <div class="row">
     <h2>FEATURE: Buttons</h2>
-    Cards are a popular and flexible UI component in Foundation!
+    Buttons can be really helpful tools when you want to complete more traditional actions. Foundation has many ways to use certain styles styles that you can fit your needs with.
   </div>
+  <br>
+  When class="tiny button", we get...
+  <a class="tiny button">a tiny button</a><br>
+  When class="small button", we get...
+  <a class="small button">a slightly bigger button</a><br>
+  When class="large button", we get...
+  <a class="large button">a BIG BUTTON</a><br>
 
   <div class="row">
     <h2>FEATURE: Cards</h2>
-    Cards are a popular and flexible UI component in Foundation!
-  </div>
+    Cards are a popular and flexible UI component in Foundation!<Br>
+    - class="card" initiates the creation of a card<br>
+    - class="card-divider" divides it into two sections<br>
+    - class="card-section" allows you to write content in the card<br>
+  </div><br>
+    <div class="card" style="width:450px">
+      <div class="card-divider">
+        <h3>Le Machine</h3>
+      </div>
+      <div class="card-section">
+        <p>How do you become a soccer superstar, you may ask? Here are some components that are NECESSARY for becoming the best in the game.</p>
+      </div>
+      <img src="https://pbs.twimg.com/media/E4PdcubXIAURD8R.jpg:large">
+    </div>
 
 
 </body>
