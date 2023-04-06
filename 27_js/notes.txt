@@ -1,0 +1,18 @@
+Team In the Works :: Shafiul H, Kosta D
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+- commenting out lines in scheme is ;
+- commenting out lines in javascript is //
+- parenthesis seem to be the main syntax for creating scheme functions
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How can we display javascript functions through html?
+* Is javascript or scheme more reliable in creating more complex functions?
+* syntax is very clean for both languages
+=================================================================
