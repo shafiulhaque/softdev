@@ -1,0 +1,17 @@
+Team In the Works :: Shafiul H, Kosta D
+SoftDev pd2
+K28 -- Manipulating the DOM
+2023-04-17m
+
+DISCO
+-----------------------------------------------------------------
+- the way that variables and functions work are very similar to java syntax
+- variables can be assigned to functions
+- variables acn work like a dictionary
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How does the myFxn work?
+* Do new variables have to be created each time?
+=================================================================

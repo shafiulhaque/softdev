@@ -17,25 +17,26 @@
    (delete this block comment once you are done)
 */
 
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Team In the Works :: Shafiul H, Kosta D
+// SoftDev pd2
 // K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-05w
+// 2023-04-17m
 // --------------------------------------------------
 
 
 //send diagnostic output to console
 //(Ctrl-Shift-K in Firefox to reveal console)
-console.log("AYO");
+console.log("AYO"); // "AYO" is printed into the console
 
 var i = "hello";
 var j = 20;
+// string and number is stored in the respective variable
 
 
 //assign an anonymous fxn to a var
 var f = function(x) {
   var j=30;
-  return j+x;
+  return j+x; // 30 is added to x
 };
 
 
@@ -47,21 +48,21 @@ var o = { 'name' : 'Thluffy',
           func : function(x) {
             return x+30;
           }
-        };
+        }; //the variable is like a dictionary
 
 
 var addItem = function(text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
   newitem.innerHTML = text;
-  list.appendChild(newitem);
-};
+  list.appendChild(newitem); // item is added to the end of a list
+}; // var is functioning like a dictionary
 
 
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
-};
+}; // item is removed from a list
 
 
 var red = function() {
@@ -76,17 +77,45 @@ var stripe = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
     if (i%2==0){
-      items[i].classList.add('red');
+      items[i].classList.add('red'); //adds red
     } else {
-      items[i].classList.add('blue');
+      items[i].classList.add('blue'); //adds blue
     }
   }
 };
 
 //insert your implementations here for...
 // FIB
+function fib(n) {
+  if (n < 2){
+      return 1
+  } else{
+      return fib(n - 1) + fib(n - 2)
+  }
+}
+
 // FAC
+function fact(n) {
+  if (n < 2){
+      return 1
+  } else{
+      return n * fact(n - 1)
+  }
+}
+
 // GCD
+function gcd(a, b) {
+  if (b == 0) {
+    return a;
+  } else {
+    while (b != 0) {
+      var x = b;
+      b = a%b;
+      a = x;
+    }
+    return a;
+  }
+}
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
