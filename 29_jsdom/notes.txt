@@ -1,0 +1,18 @@
+Team Dragonite :: Jeffrey Z, Shafiul H
+SoftDev pd2
+K289 -- DOMfoolery++
+2023-04-20t
+
+DISCO
+-----------------------------------------------------------------
+- helper functions go a long way
+- addEventListener helps relay the information from the button to the code
+- the innerHTML function helps print out the variable into the HTML
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Is it fine if the console log gives errors when running the function?
+* Is there a cleaner way to write the code?
+* Onclick seems pretty important in displaying the information
+=================================================================
