@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+     Team Dragonite :: Jeffrey Z, Shafiul H
+    SoftDev pd2
+    K29 -- DOMfoolery++
+    2023-04-20t
+   --------------------------------------------------
+-->
+
+<html lang="en">
+  <!-- HTML file for exploring JavaScript interactions with the DOM -->
+
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .red   {color : #ff0000;}
+      .green {color : #00ff00;}
+      .blue  {color : #0000ff;}
+    </style>
+  </head>
+
+  <body>
+    <h1 id="h" class="blue">Hello World!</h1>
+
+    <div id="div1" class="green">The fib of 5 is <span id="fib"></span></div>
+    <div id="div2">The fact of 5 is <span id="fact"></span></div>
+    <div class="blue">The gcd between 5 and 7 is <span id="gcd"></span></div>
+    
+    <ol id="thelist">
+      <li class="">item 0</li>
+      <li class="green blue">item 1</li>
+      <li class="green blue">item 2</li>
+      <li class="red green blue">item 3</li>
+      <li class="red green blue">item 4</li>
+      <li class="green blue">item 5</li>
+      <li class="green blue">item 6</li>
+      <li class="">item 7</li>
+    </ol>
+
+    <button type="button" id="a" onclick="fibb()">Fib(20)</button>
+    <div id="div1" class="green">The fib of 20 is <span id="one"></span></div>
+    <button type="button" id="b" onclick="facc()">Fact(20)</button>
+    <div id="div1" class="green">The fact of 20 is <span id="two"></span></div>
+    <button type="button" id="c" onclick="gcdd()">GCD(20,7)</button>
+    <div id="div1" class="green">The gcd of 20 and 7 is <span id="three"></span></div>
+
+    <script src="dommy_consolery.js">
+
+    </script>
+
+  </body>
+</html>
