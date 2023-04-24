@@ -1,0 +1,17 @@
+Team In the Works :: Shafiul H, Kosta D
+SoftDev pd2
+K30 -- JS Paint
+2023-04-24m
+
+DISCO
+-----------------------------------------------------------------
+- to receive node in DOM via ID, do document.getElementById()
+- offsetX and offsetY are the coordinates of the object
+- beginPath() is needed to reset coords for the circle
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* we still have a problem when we clear the canvas, toggle the mode, and set the object near old objects
+* how does getElementById() work?
+=================================================================
